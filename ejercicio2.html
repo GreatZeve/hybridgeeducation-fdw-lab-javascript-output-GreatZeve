@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demostración de Output en Javascript</title>
+</head>
+<body>
+    <h1>Demostración de Output en Javascript</h1>
+    <button type="button" onclick='alert("Sitio creado por César Ángeles")'>Botón de alerta</button>
+    <p id="parrafo" onclick="cambiarParrafo()">Párrafo que cambia al click</p>
+
+    <script>
+        function cambiarParrafo() {
+            document.getElementById("parrafo").innerHTML = "Texto actualizado con Javascript";
+        }
+
+        window.onload = function() {
+            console.log("La página se ha cargado correctamente");
+        }
+    </script>
+</body>
+</html>
